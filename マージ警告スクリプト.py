@@ -49,7 +49,7 @@ def get_verts_from_stat():
     if end_index < 0:
         return 0
     
-    return int(stat[split_index + 1 : end_index])
+    return int(stat[split_index + 1 : end_index].replace(',', ''))
 
 def reset_states():
     global previous_object_name
